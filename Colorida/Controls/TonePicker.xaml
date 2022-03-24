@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="Colorida.Controls.TonePicker"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Colorida.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="45" d:DesignWidth="200">
+    <Grid>
+        <Rectangle x:Name="rcg" Grid.Row="4">
+            <Rectangle.Fill>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                    <GradientStop Color="Red" Offset="0.0" />
+                    <GradientStop Color="Magenta" Offset="0.14" />
+                    <GradientStop Color="Blue" Offset="0.28" />
+                    <GradientStop Color="Cyan" Offset="0.42" />
+                    <GradientStop Color="LimeGreen" Offset="0.56" />
+                    <GradientStop Color="Yellow" Offset="0.70" />
+                    <GradientStop Color="Red" Offset="1.0" />
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Border x:Name="bc" Width="22" Height="22" VerticalAlignment="Bottom" HorizontalAlignment="Left">
+
+        </Border>
+    </Grid>
+</UserControl>
